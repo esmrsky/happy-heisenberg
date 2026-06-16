@@ -296,21 +296,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const completedCount = Object.values(state.tracker.completedHabits).filter(val => val === true).length;
     const percent = Math.round((completedCount / totalHabits) * 100);
 
-    trackerPercentText.innerText = `${percent}%`;
-    trackerStreakText.innerText = `${state.tracker.streak} Day${state.tracker.streak === 1 ? '' : 's'}`;
+    if (trackerPercentText) {
+      trackerPercentText.innerText = `${percent}%`;
+    }
+    if (trackerStreakText) {
+      trackerStreakText.innerText = `${state.tracker.streak} Day${state.tracker.streak === 1 ? '' : 's'}`;
+    }
 
-    // SVG dashoffset calculations
-    const circumference = 439.8;
-    const offset = circumference - (circumference * percent) / 100;
-    trackerProgressCircle.style.strokeDashoffset = offset;
+    if (trackerProgressCircle) {
+      // SVG dashoffset calculations
+      const circumference = 439.8;
+      const offset = circumference - (circumference * percent) / 100;
+      trackerProgressCircle.style.strokeDashoffset = offset;
 
-    if (percent === 100) {
-      trackerProgressCircle.style.stroke = 'var(--accent-spirit)';
-      const randQuote = scriptureQuotes[Math.floor(Math.random() * scriptureQuotes.length)];
-      trackerQuoteText.innerText = `"${randQuote.text}"`;
-      trackerQuoteAuthor.innerText = `— ${randQuote.ref}`;
-    } else {
-      trackerProgressCircle.style.stroke = 'var(--accent-science)';
+      if (percent === 100) {
+        trackerProgressCircle.style.stroke = 'var(--accent-spirit)';
+        const randQuote = scriptureQuotes[Math.floor(Math.random() * scriptureQuotes.length)];
+        if (trackerQuoteText) trackerQuoteText.innerText = `"${randQuote.text}"`;
+        if (trackerQuoteAuthor) trackerQuoteAuthor.innerText = `— ${randQuote.ref}`;
+      } else {
+        trackerProgressCircle.style.stroke = 'var(--accent-science)';
+      }
     }
   }
 
@@ -324,15 +330,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  resetTrackerBtn.addEventListener('click', () => {
-    Object.keys(habitCheckboxes).forEach(key => {
-      if (habitCheckboxes[key]) {
-        habitCheckboxes[key].checked = false;
-        state.tracker.completedHabits[key] = false;
-      }
+  if (resetTrackerBtn) {
+    resetTrackerBtn.addEventListener('click', () => {
+      Object.keys(habitCheckboxes).forEach(key => {
+        if (habitCheckboxes[key]) {
+          habitCheckboxes[key].checked = false;
+          state.tracker.completedHabits[key] = false;
+        }
+      });
+      saveTrackerData();
     });
-    saveTrackerData();
-  });
+  }
 
   // Load tracker state on start
   loadTrackerData();
