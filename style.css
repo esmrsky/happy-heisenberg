@@ -1242,3 +1242,6 @@
 
 .hidden { display: none !important; }
 .svg-hotspot-group { outline: none; }
+
+/* reading comfort: balance display text */
+h1, h2, h3 { text-wrap: balance; }
