@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
       distortion: "Self-Reinforcing Amygdala Threat Spiral",
       science: "Your amygdala interprets peer comparison as a survival threat. It floods your brain with cortisol, which physically disables prefrontal planning. This cortisol spiral forces you to scan for more threats (DMN rumination), reinforcing panic.",
       targetRegion: "Target: Amygdala Hyperactivity & Cortisol Loop",
-      scripture: "For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope.",
+      scripture: "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future.",
       ref: "Jeremiah 29:11",
       commentary: "Willpower cannot quiet a cortisol flood. You must deactivate the amygdala loop using gratitude and trust, shifting from social anxiety to stewardship of your calling.",
       action: "Write down 3 distinct talents God gave you. Designate 1 goal for tomorrow. Close all social media comparison accounts for 24 hours."
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
       distortion: "Cortisol-Isolation Feedback Rut",
       science: "Relational isolation is interpreted by the brain as literal physiological danger. Lacking face-to-face feedback cues deprives you of oxytocin, which elevates baseline cortisol, impairing prefrontal control and locking you in social withdrawal.",
       targetRegion: "Target: Oxytocin Starvation & Hippocampus Stress",
-      scripture: "Two are better than one, because they have a good reward for their toil. For if they fall, one will lift up his fellow.",
+      scripture: "Two are better than one, because they have a good return for their labor: if either of them falls down, one can help the other up.",
       ref: "Ecclesiastes 4:9-10",
       commentary: "Isolation is a closed loop: isolation breeds fear, which breeds further isolation. Breaking the cycle requires replacing virtual links with real-world fellowship to release cortisol-regulating oxytocin.",
       action: "Call one friend or family member. Ask to meet face-to-face. Focus entirely on listening and encouraging them."
@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
       distortion: "Basal Ganglia Compulsion Loop",
       science: "Your habit routine is hardwired into the basal ganglia. Under willpower depletion (stress/boredom), your prefrontal cortex lose its veto power, making the loop automatic. The Law (rules) alone triggers reactance and failure.",
       targetRegion: "Target: Basal Ganglia & New Covenant Renewal",
-      scripture: "No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape...",
+      scripture: "No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out...",
       ref: "1 Corinthians 10:13",
       commentary: "Willpower fails because the flesh is weak under stress. True New Covenant transformation rewires desires from the inside out by inserting a 90-second gap of prayer and grace between trigger and action.",
       action: "Next time you feel a craving cue, wait exactly 90 seconds. Walk outside, drink water, and pray: 'Lord, guide me to the escape path.'"
@@ -442,7 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
           distortion: "Prefrontal Attention Drift & DMN Loop",
           science: "Lacking focused vision, your prefrontal cortex enters attention drift. Your default mode network (DMN) runs self-critical loops. White-knuckling focus drains prefrontal battery, driving you to cheap screen coping cycles.",
           targetRegion: "Target: Prefrontal Fatigue & DMN loop",
-          scripture: "Finally, brothers, whatever is true, honorable, just, pure, lovely... think about these things.",
+          scripture: "Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely... think about such things.",
           ref: "Philippians 4:8",
           commentary: "Mind renewal is not willpower; it is redirection of focus. Replace self-worry loops by focusing attention on objective truths and scripture.",
           action: "Close your eyes. Inhale for 4 seconds, hold for 4, exhale for 4. Write down 3 good things in front of you."
