@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentActive = document.querySelector('.content-section.active');
     if (currentActive) {
       currentActive.style.opacity = '0';
-      currentActive.style.transform = 'translateY(10px)';
       
       setTimeout(() => {
         currentActive.classList.remove('active');
@@ -54,14 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
         targetSection.offsetHeight; // Force reflow
         targetSection.classList.add('active');
         targetSection.style.opacity = '1';
-        targetSection.style.transform = 'translateY(0)';
-      }, 250);
+      }, 350);
     } else {
       const targetSection = document.getElementById(sectionId);
       targetSection.style.display = 'block';
       targetSection.classList.add('active');
       targetSection.style.opacity = '1';
-      targetSection.style.transform = 'translateY(0)';
     }
 
     state.currentSection = sectionId;
@@ -88,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
 
   function setTheme(theme) {
-    metaColorScheme.content = theme === 'dark' ? 'dark' : 'light dark';
+    metaColorScheme.content = theme === 'dark' ? 'dark' : 'light';
     localStorage.setItem('color-scheme', theme);
     document.documentElement.setAttribute('content', theme);
   }
